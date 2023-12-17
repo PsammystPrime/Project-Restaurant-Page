@@ -3,13 +3,20 @@ const content = document.getElementById('content');
 
 const header = document.createElement('div');
 const homeBtn = document.createElement('button');
-const faqsBtn = document.createElement('button');
+const mealsBtn = document.createElement('button');
+const drinksBtn = document.createElement('button');
+
 header.className = 'header'
+homeBtn.className = 'home'
 homeBtn.textContent = 'Home';
-faqsBtn.textContent = 'FAQs';
+mealsBtn.textContent = 'Meals'
+mealsBtn.className = 'meals';
+drinksBtn.textContent = 'Drinks';
+drinksBtn.className = 'drinks'
 
 header.appendChild(homeBtn);
-header.appendChild(faqsBtn);
+header.appendChild(mealsBtn);
+header.appendChild(drinksBtn)
 content.appendChild(header);
 
 
