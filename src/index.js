@@ -1,1 +1,4 @@
-console.log('hello world')
+import './pageLoad'
+
+console.log('Dynasty Dishes')
+
