@@ -10,8 +10,13 @@ body.className = 'body'
 image.alt = 'page'
 about.className = 'about'
 aboutheader.textContent = 'About us'
-aboutPara.textContent = ' This is a very good restaurant'
-aboutBtn.textContent = 'Get Started'
+aboutPara.textContent = " This is a very good restaurant. A page for dishes served in a restaurant. Practicing DOM manipulation by dynamically  rendering a simple restaurant homepage. Am using Javascript alone to generate the entire contents of the website!"
+aboutBtn.textContent = 'Loyalty Programme'
+aboutBtn.className = 'loyalty'
+
+aboutBtn.addEventListener('click', ()=>{
+    alert('Loyalty Programme Coming Soon')
+})
 
 function hoe() {
     body.textContent = ''

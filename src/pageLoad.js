@@ -21,7 +21,7 @@ content.appendChild(header);
 
 
 const body = document.createElement('div');
-const image = document.createElement('img')
+const image = document.createElement('img');
 const about = document.createElement('div');
 const aboutheader = document.createElement('h5');
 const aboutPara = document.createElement('p');
@@ -31,8 +31,10 @@ body.className = 'body'
 image.alt = 'page'
 about.className = 'about'
 aboutheader.textContent = 'About us'
-aboutPara.textContent = ' This is a very good restaurant'
-aboutBtn.textContent = 'Get Started'
+aboutPara.textContent = " This is a very good restaurant. A page for dishes served in a restaurant. Practicing DOM manipulation by dynamically  rendering a simple restaurant homepage. Am using Javascript alone to generate the entire contents of the website!"
+
+aboutBtn.className = 'loyalty'
+aboutBtn.textContent = 'Loyalty Programme'
 
 about.appendChild(aboutheader);
 about.appendChild(aboutPara);
