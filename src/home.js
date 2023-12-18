@@ -22,10 +22,8 @@ aboutBtn.addEventListener('click', ()=>{
 
 
 
-function hoe() {
+function home() {
     body.textContent = ''
-
-
 
     about.appendChild(aboutheader);
     about.appendChild(aboutPara);
@@ -33,5 +31,5 @@ function hoe() {
     body.appendChild(image);
     body.appendChild(about);
 }
-export {hoe}
+export {home}
 

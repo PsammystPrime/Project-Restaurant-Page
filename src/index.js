@@ -1,7 +1,7 @@
 import './pageLoad'
-import { hoe } from './home';
+import { home } from './home';
 import { drink } from "./drinks";
-import { btns } from './meals' 
+import { meals} from './meals' 
 
 const homeBtn = document.querySelector('.home')
 const mealsBtn = document.querySelector('.meals')
@@ -9,12 +9,12 @@ const drinksBtn = document.querySelector('.drinks')
 const aboutBtn = document.querySelector('.loyalty')
 
 homeBtn.addEventListener('click', ()=>{
-    hoe()
+    home()
 
 })
 
 mealsBtn.addEventListener('click', ()=>{
-   btns()
+   meals()
 })
 
 drinksBtn.addEventListener('click', ()=>{
