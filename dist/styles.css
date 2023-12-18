@@ -1,0 +1,95 @@
+#content{
+    background-image: url('../src/peoplebg.jpeg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* background-image: linear-gradient(
+        45deg,
+        magenta,
+        rebeccapurple,
+        dodgerblue,
+        green
+    );
+    opacity: 0.8;*/
+    
+           
+}
+.header{
+    display: flex;
+    height: px;
+    align-items: center;
+    gap: 30px;
+    align-self: flex-end;
+    margin: 30px 214px 0 0;
+    
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row;
+    /*background-color: gold;*/
+    min-height: 470px;
+    width: 890px;
+      
+}
+p{
+    color: aliceblue;
+}
+button{
+    background-color: darkslategray;
+}
+button:hover{
+    color: lightseagreen;
+}
+img{ 
+    background-color: red;
+    width: 40vw;
+    height: 70vh;
+    border-radius: 10px;
+    
+}
+.about{   
+    color: red;
+    margin-left: 150px;
+}
+h1{
+    color: chocolate;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+footer {
+   align-self: flex-start;
+    margin: 0 0 10px 14px;
+    display: flex;
+    width: 80em;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.right{
+    color: red;
+    align-self: flex-end;
+    text-decoration: underline;
+}
+.Connect{
+    display: flex;
+    gap: 10px;
+}
+
+.foods,.drinks{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+#meals, #drinks{
+    height: 200px;
+    width: 200px;
+}
+#mainImg{
+    border-radius: 600px;
+ 
+}
