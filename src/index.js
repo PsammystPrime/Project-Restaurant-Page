@@ -10,6 +10,7 @@ const aboutBtn = document.querySelector('.loyalty')
 
 homeBtn.addEventListener('click', ()=>{
     hoe()
+
 })
 
 mealsBtn.addEventListener('click', ()=>{
