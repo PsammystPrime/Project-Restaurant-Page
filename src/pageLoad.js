@@ -1,5 +1,6 @@
 console.log('hey');
 const content = document.getElementById('content');
+import Icon from './recipies.png'
 
 const header = document.createElement('div');
 const homeBtn = document.createElement('button');
@@ -29,6 +30,7 @@ const aboutBtn = document.createElement('button');
 
 body.className = 'body'
 image.alt = 'page'
+image.src = Icon;
 about.className = 'about'
 aboutheader.textContent = 'About us'
 aboutPara.textContent = " This is a very good restaurant. A page for dishes served in a restaurant. Practicing DOM manipulation by dynamically  rendering a simple restaurant homepage. Am using Javascript alone to generate the entire contents of the website!"

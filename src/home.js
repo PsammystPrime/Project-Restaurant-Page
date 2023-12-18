@@ -1,14 +1,11 @@
 const body = document.querySelector('.body')
-import Icon from './blackcomp.png'
-
+import Icon from './recipies.png'
 
 const image = document.createElement('img')
 const about = document.createElement('div');
 const aboutheader = document.createElement('h5');
 const aboutPara = document.createElement('p');
 const aboutBtn = document.createElement('button');
-
-
 
 body.className = 'body'
 image.alt = 'page'
@@ -27,6 +24,8 @@ aboutBtn.addEventListener('click', ()=>{
 
 function hoe() {
     body.textContent = ''
+
+
 
     about.appendChild(aboutheader);
     about.appendChild(aboutPara);
