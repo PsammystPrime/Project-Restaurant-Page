@@ -55,27 +55,48 @@ const right = document.createElement('p');
 const footerHeader = document.createElement('p');
 const connectBtns = document.createElement('div')
 const twitterBtn = document.createElement('button');
-const instagramBtn = document.createElement('button');
-const facebookBtn = document.createElement('button');
+const twitterlink = document.createElement('a')
 const emailBtn = document.createElement('button');
+const emaillink = document.createElement('a');
 const githubBtn = document.createElement('button');
+const githublink = document.createElement('a');
+const instagramBtn = document.createElement('button');
+const instagramlink = document.createElement('a');
+const linkedInBtn = document.createElement('button');
+const linkedInlink = document.createElement('a');
+
+
 
 left.className = 'left';
 right.className = 'right';
 right.textContent = `Images generated from Unsplash`;
 footerHeader.textContent = 'Connect on';
 connectBtns.className = ' Connect';
-twitterBtn.textContent = 'Twitter';
-instagramBtn.textContent = 'Instagram';
-facebookBtn.textContent = 'Facebook';
-emailBtn.textContent = 'Email';
-githubBtn.textContent = 'Github';
+twitterlink.textContent = 'Twitter';
+instagramlink.textContent = 'Instagram';
+linkedInlink.textContent = 'LinkedIn';
+emaillink.textContent = 'Email';
+githublink.textContent = 'Github';
 
-connectBtns.appendChild(twitterBtn);
-connectBtns.appendChild(instagramBtn);
-connectBtns.appendChild(facebookBtn);
-connectBtns.appendChild(emailBtn);
+twitterlink.href = 'www.twitter.com/psammystprime1.com'
+instagramlink.href = ''
+linkedInlink.href = 'https://www.linkedin.com/in/samuel-njuguna-b74abb28b/'
+emaillink.href = 'www.psammystprime384@gmail.com'
+githublink.href = 'www.github.com/psammystprime.com'
+
+
+twitterBtn.appendChild(twitterlink);
+instagramBtn.appendChild(instagramlink);
+linkedInBtn.appendChild(linkedInlink);
+emailBtn.appendChild(emaillink);
+githubBtn.appendChild(githublink);
+
 connectBtns.appendChild(githubBtn);
+connectBtns.appendChild(twitterBtn);
+connectBtns.appendChild(emailBtn);
+connectBtns.appendChild(instagramBtn);
+connectBtns.appendChild(linkedInBtn);
+
 left.appendChild(footerHeader);
 left.appendChild(connectBtns);
 footer.appendChild(left);

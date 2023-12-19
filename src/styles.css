@@ -66,6 +66,11 @@ h1{
     font-style: italic;
     font-weight: bolder;
 }
+a{
+    color: white;
+    text-decoration: none;
+    margin: 3px;
+}
 
 footer {
    align-self: flex-start;
@@ -104,6 +109,6 @@ footer {
 #mainImg:hover {
         border:  solid rgb(214, 128, 14);
         transform: translateX(10px);
-        transition: 10s;
-                
-    }
+        transition: 10s;            
+}
+

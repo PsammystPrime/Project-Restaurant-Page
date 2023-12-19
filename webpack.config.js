@@ -15,13 +15,10 @@ module.exports = {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
             type: 'asset/resource',
           }, 
-<<<<<<< HEAD
           {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
-=======
->>>>>>> parent of 825ebd4 (Installed css loaders and some background images)
         ]
     },
     
