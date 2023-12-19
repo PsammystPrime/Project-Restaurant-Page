@@ -1,5 +1,5 @@
 #content{
-    background-image: url('../src/peoplebg.jpeg');
+    background-image: url('/src/peoplebg.jpeg');
     display: flex;
     flex-direction: column;
     align-items: center;
