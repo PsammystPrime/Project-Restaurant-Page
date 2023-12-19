@@ -1,4 +1,5 @@
 import './pageLoad';
+import './styles.css';
 import { home } from './home';
 import { drink } from "./drinks";
 import { meals} from './meals' ;
