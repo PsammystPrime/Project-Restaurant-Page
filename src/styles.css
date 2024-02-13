@@ -1,5 +1,7 @@
 #content{
     background-image: url('../src/peoplebg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,26 +18,16 @@
 }
 .header{
     display: flex;
-    height: px;
     align-items: center;
     gap: 30px;
     align-self: flex-end;
-    margin: 30px 214px 0 0;
+    margin: 30px 0 30px 0;
     
 }
 
 .body{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-flow: row;
-    /*background-color: gold;*/
-    min-height: 470px;
-    width: 890px;
-      
-}
-p{
-    color: aliceblue;
+    align-items: center;      
 }
 button{
     background-color: darkslategray;
@@ -43,35 +35,53 @@ button{
 button:hover{
     color: lightseagreen;
 }
+.homeBody{
+    display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+      gap: 30px;
+}
 img{ 
     background-color: red;
-    width: 40vw;
-    height: 70vh;
+    max-width: 350px;
     border-radius: 10px;
     
 }
-.about{   
-    color: red;
-    margin-left: 150px;
+.about{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    /* margin-left: 150px; */
 }
-h1{
+p{
+    color: aliceblue;
+    max-width: 300px;
+}
+h5{
+    font-size: large;
+    font-weight: bolder;
+    color: aqua;
+}
+h2{
     color: chocolate;
     font-style: italic;
-    font-weight: bolder;
+    padding-left: 20px;
 }
 
 footer {
-   align-self: flex-start;
+    align-self: flex-start;
     margin: 0 0 10px 14px;
     display: flex;
-    width: 80em;
-    align-items: flex-start;
-    justify-content: space-between;
-    
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%vw;    
 }
 .right{
-    color: red;
-    align-self: flex-end;
+    color: rgb(231, 160, 16);
+    justify-self: flex-end;
+    text-align: justify;
     text-decoration: underline;
 }
 .Connect{
@@ -83,10 +93,10 @@ footer {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    overflow: auto;
+  
 }
 #meals, #drinks{
-    height: 200px;
+    max-height: 200px;
     width: 200px;
 }
 #mainImg{
