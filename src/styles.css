@@ -88,15 +88,29 @@ footer {
 
 .foods,.drinks{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     padding-left: 10px;
   
 }
 #meals, #drinks{
-    height: 100px;
-    width: 180px;
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 300px;
+    max-width: 300px;
     border-radius: 10px;
+}
+#meals:hover{
+    transform: translateY(10%);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+#drinks:hover{
+    transform: translateY(10%);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
 }
 #mainImg{ 
     max-width: 350px;
