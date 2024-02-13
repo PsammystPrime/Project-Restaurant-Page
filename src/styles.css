@@ -41,12 +41,9 @@ button:hover{
      flex-wrap: wrap;
       gap: 30px;
 }
-img{ 
-    background-color: red;
-    max-width: 350px;
-    border-radius: 10px;
-    
-}
+
+
+
 .about{  
     display: flex;
     flex-direction: column;
@@ -91,15 +88,17 @@ footer {
 
 .foods,.drinks{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
+    padding-left: 10px;
   
 }
 #meals, #drinks{
-    max-height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 180px;
+    border-radius: 10px;
 }
-#mainImg{
+#mainImg{ 
+    max-width: 350px;
     border-radius: 600px;
- 
 }
