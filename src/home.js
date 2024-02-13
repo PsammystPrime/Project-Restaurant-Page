@@ -4,7 +4,7 @@ import Icon from './drinksbg2.jpeg';
 const homeBody = document.createElement('div');
 const image = document.createElement('img')
 const about = document.createElement('div');
-const title = document.createElement('h1');
+const title = document.createElement('h2');
 const aboutheader = document.createElement('h5');
 const aboutPara = document.createElement('p');
 const aboutBtn = document.createElement('button');
