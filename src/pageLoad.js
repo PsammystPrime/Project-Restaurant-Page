@@ -20,14 +20,17 @@ header.appendChild(drinksBtn);
 content.appendChild(header);
 
 
+const homeBody = document.createElement('div');
 const body = document.createElement('div');
 const image = document.createElement('img');
 const about = document.createElement('div');
-const title = document.createElement('h1');
+const title = document.createElement('h2');
 const aboutheader = document.createElement('h5');
 const aboutPara = document.createElement('p');
 const aboutBtn = document.createElement('button');
 
+
+homeBody.className = 'homeBody';
 body.className = 'body';
 image.alt = 'page';
 image.src = Icon;
@@ -44,8 +47,9 @@ about.appendChild(title);
 about.appendChild(aboutheader);
 about.appendChild(aboutPara);
 about.appendChild(aboutBtn);
-body.appendChild(image);
-body.appendChild(about);
+homeBody.appendChild(image);
+homeBody.appendChild(about);
+body.appendChild(homeBody);
 content.appendChild(body);
 
 
@@ -60,8 +64,6 @@ const emailBtn = document.createElement('button');
 const emaillink = document.createElement('a');
 const githubBtn = document.createElement('button');
 const githublink = document.createElement('a');
-const instagramBtn = document.createElement('button');
-const instagramlink = document.createElement('a');
 const linkedInBtn = document.createElement('button');
 const linkedInlink = document.createElement('a');
 
@@ -73,20 +75,17 @@ right.textContent = `Images generated from Unsplash`;
 footerHeader.textContent = 'Connect on';
 connectBtns.className = ' Connect';
 twitterlink.textContent = 'Twitter';
-instagramlink.textContent = 'Instagram';
 linkedInlink.textContent = 'LinkedIn';
 emaillink.textContent = 'Email';
 githublink.textContent = 'Github';
 
 twitterlink.href = 'www.twitter.com/psammystprime1.com'
-instagramlink.href = ''
 linkedInlink.href = 'https://www.linkedin.com/in/samuel-njuguna-b74abb28b/'
 emaillink.href = 'www.psammystprime384@gmail.com'
 githublink.href = 'www.github.com/psammystprime.com'
 
 
 twitterBtn.appendChild(twitterlink);
-instagramBtn.appendChild(instagramlink);
 linkedInBtn.appendChild(linkedInlink);
 emailBtn.appendChild(emaillink);
 githubBtn.appendChild(githublink);
@@ -94,12 +93,11 @@ githubBtn.appendChild(githublink);
 connectBtns.appendChild(githubBtn);
 connectBtns.appendChild(twitterBtn);
 connectBtns.appendChild(emailBtn);
-connectBtns.appendChild(instagramBtn);
 connectBtns.appendChild(linkedInBtn);
+
 
 left.appendChild(footerHeader);
 left.appendChild(connectBtns);
 footer.appendChild(left);
 footer.appendChild(right);
 content.appendChild(footer);
-

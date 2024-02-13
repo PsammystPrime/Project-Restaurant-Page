@@ -1,6 +1,7 @@
 const body = document.querySelector('.body');
 import Icon from './drinksbg2.jpeg';
 
+const homeBody = document.createElement('div');
 const image = document.createElement('img')
 const about = document.createElement('div');
 const title = document.createElement('h1');
@@ -8,6 +9,7 @@ const aboutheader = document.createElement('h5');
 const aboutPara = document.createElement('p');
 const aboutBtn = document.createElement('button');
 
+homeBody.className = 'homeBody';
 body.className = 'body'
 image.alt = 'page'
 image.src = Icon
@@ -30,8 +32,9 @@ function home() {
     about.appendChild(aboutheader);
     about.appendChild(aboutPara);
     about.appendChild(aboutBtn);
-    body.appendChild(image);
-    body.appendChild(about);
+    homeBody.appendChild(image);
+    homeBody.appendChild(about);
+    body.appendChild(homeBody);
 }
 export {home};
 
