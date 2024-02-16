@@ -79,10 +79,10 @@ linkedInlink.textContent = 'LinkedIn';
 emaillink.textContent = 'Email';
 githublink.textContent = 'Github';
 
-twitterlink.href = 'www.twitter.com/psammystprime1.com'
-linkedInlink.href = 'https://www.linkedin.com/in/samuel-njuguna-b74abb28b/'
-emaillink.href = 'www.psammystprime384@gmail.com'
-githublink.href = 'www.github.com/psammystprime.com'
+twitterlink.href = 'https://www.twitter.com/psammystprime1.com'
+linkedInlink.href = 'https://www.linkedin.com/in/samuel njuguna384/'
+emaillink.href = 'https://www.psammystprime384@gmail.com'
+githublink.href = 'https://www.github.com/psammystprime.com'
 
 
 twitterBtn.appendChild(twitterlink);
