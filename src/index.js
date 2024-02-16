@@ -9,6 +9,8 @@ const mealsBtn = document.querySelector('.meals');
 const drinksBtn = document.querySelector('.drinks');
 const aboutBtn = document.querySelector('.loyalty');
 
+
+
 homeBtn.addEventListener('click', ()=>{
     home()
 
