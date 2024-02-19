@@ -1,7 +1,7 @@
 # Project-Restaurant-Page
 
 ###
-   <img src='./final.png'>
+   <img src='./restaurant.png'>
 
 ###
 
