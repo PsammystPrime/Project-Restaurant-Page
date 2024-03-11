@@ -1,6 +1,6 @@
 const body = document.querySelector('.body');
-const drinkss = document.createElement('div');
-drinkss.className = 'drinks';
+const cocktails = document.createElement('div');
+cocktails.className = 'drinks';
 
 function getData(){
     fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail', { 
@@ -29,7 +29,7 @@ function getData(){
             card.appendChild(dishPrice);
             card.appendChild(dishPicture);
             
-            drinkss.appendChild(card);
+            cocktails.appendChild(card);
         })
     })
     .catch((error)=>{
@@ -40,7 +40,7 @@ getData()
 
 function drink() {
     body.textContent = ''
-    body.appendChild(drinkss)
+    body.appendChild(cocktails)
 };
 
 export {drink};
