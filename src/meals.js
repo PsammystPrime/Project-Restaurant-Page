@@ -9,7 +9,7 @@ function getData(){
             prefix: 'chicken soup'
           },
         headers: {
-          'X-RapidAPI-Key': 'API KEY',
+          'X-RapidAPI-Key': '95f758093emshe86bc2c74f42684p1e2a7djsn57a695ab4283',
           'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
         }
     })
