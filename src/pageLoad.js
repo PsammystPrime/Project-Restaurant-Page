@@ -19,7 +19,6 @@ header.appendChild(mealsBtn);
 header.appendChild(drinksBtn);
 content.appendChild(header);
 
-
 const homeBody = document.createElement('div');
 const body = document.createElement('div');
 const image = document.createElement('img');
