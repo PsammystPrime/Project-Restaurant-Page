@@ -1,0 +1,131 @@
+#content{
+    background-image: url('../src/peoplebg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* background-image: linear-gradient(
+        45deg,
+        magenta,
+        rebeccapurple,
+        dodgerblue,
+        green
+    );
+    opacity: 0.8;*/
+    
+           
+}
+.header{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    align-self: flex-end;
+    margin: 30px 10px 30px 0;
+}
+.body{
+    display: flex;
+    align-items: center;      
+    min-height: 70vh;
+}
+button{
+    background-color: darkslategray;
+}
+button:hover{
+    color: lightseagreen;
+}
+.homeBody{
+    display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+      gap: 30px;
+}
+.about{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+p{
+    color: aliceblue;
+    max-width: 300px;
+}
+h5{
+    font-size: large;
+    font-weight: bolder;
+    color: aqua;
+}
+h2{
+    color: chocolate;
+    font-style: italic;
+    padding-left: 20px;
+}
+
+footer {
+    align-self: flex-start;
+    margin: 0 0 10px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%vw;    
+}
+.right{
+    color: rgb(145, 16, 231);
+    justify-self: flex-end;
+    text-align: justify;
+    text-decoration: underline;
+}
+.Connect{
+    display: flex;
+    gap: 10px;
+}
+.Connect>button{
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+}
+a{
+    color: rgb(9, 51, 238);
+    text-decoration: none;
+}
+.Connect>button:hover{
+    background-color: brown;
+}
+.foods,.drinks{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 10px;
+  
+}
+#meals, #drinks{
+    min-height: 200px;
+    max-height: 200px;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 10px;
+}
+#meals:hover{
+    transform: translateY(10%);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    
+}
+#drinks:hover{
+    transform: translateY(10%);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+#mainImg{ 
+    max-width: 350px;
+    border-radius: 600px;
+}
+.info{
+    color: darkred;
+    font-weight: 900;
+}
+.info:hover{background-color: blanchedalmond;
+border-radius: 3px;}
