@@ -24,7 +24,6 @@ function createItems(){
     const drink4 = new Drink('chocolateCoffee ', 450, chocolateCoffee)
     const drink5 = new Drink('drinksbg1', 600, drinksbg1)
 
-
     dishes.push(drink1, drink2, drink3, drink4, drink5)
 
     dishes.forEach((dish)=>{
@@ -43,7 +42,7 @@ function createItems(){
         card.appendChild(dishPicture);
         
     drinks.appendChild(card);
-        // console.log(dish.name)
+
     })
 }
 createItems()
