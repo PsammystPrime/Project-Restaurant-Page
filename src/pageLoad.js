@@ -15,8 +15,8 @@ drinksBtn.textContent = 'Drinks';
 drinksBtn.className = 'drinks';
 
 header.appendChild(homeBtn);
-header.appendChild(mealsBtn);
 header.appendChild(drinksBtn);
+header.appendChild(mealsBtn);
 content.appendChild(header);
 
 const homeBody = document.createElement('div');
