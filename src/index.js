@@ -1,6 +1,5 @@
 import './pageLoad';
 import './styles.css';
-import { home } from './home';
 import { drink } from "./drinks";
 import { meals} from './meals' ;
 
@@ -10,12 +9,9 @@ const drinksBtn = document.querySelector('.drinks');
 const aboutBtn = document.querySelector('.loyalty');
 const content = document.querySelector('#content');
 
-
-
 homeBtn.addEventListener('click', ()=>{
     content.textContent = ''
     content.textContent = './pageLoad'
-
 });
 
 mealsBtn.addEventListener('click', ()=>{
