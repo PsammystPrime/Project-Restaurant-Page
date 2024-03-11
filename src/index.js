@@ -8,11 +8,13 @@ const homeBtn = document.querySelector('.home');
 const mealsBtn = document.querySelector('.meals');
 const drinksBtn = document.querySelector('.drinks');
 const aboutBtn = document.querySelector('.loyalty');
+const content = document.querySelector('#content');
 
 
 
 homeBtn.addEventListener('click', ()=>{
-    home()
+    content.textContent = ''
+    content.textContent = './pageLoad'
 
 });
 
