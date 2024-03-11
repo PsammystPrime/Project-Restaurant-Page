@@ -65,7 +65,6 @@ const linkedInBtn = document.createElement('button');
 const linkedInlink = document.createElement('a');
 
 
-
 left.className = 'left';
 right.className = 'right';
 right.textContent = `Images generated from Unsplash`;
