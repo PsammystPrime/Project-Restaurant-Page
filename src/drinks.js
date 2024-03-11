@@ -1,10 +1,4 @@
 const body = document.querySelector('.body');
-import Icon from './recipies.png';
-import capuccino from './capuccino.jpeg';
-import milkshake from "./milkshake.jpeg";
-import chocolate from "./chocolate.jpeg";
-import chocolateCoffee from "./chocolateCoffee.jpeg";
-import drinksbg1 from "./drinksbg1.jpeg";
 const drinkss = document.createElement('div');
 drinkss.className = 'drinks';
 
