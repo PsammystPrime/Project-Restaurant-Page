@@ -28,7 +28,6 @@ const aboutheader = document.createElement('h5');
 const aboutPara = document.createElement('p');
 const aboutBtn = document.createElement('button');
 
-
 homeBody.className = 'homeBody';
 body.className = 'body';
 image.alt = 'page';
@@ -50,7 +49,6 @@ homeBody.appendChild(image);
 homeBody.appendChild(about);
 body.appendChild(homeBody);
 content.appendChild(body);
-
 
 const footer = document.createElement('footer');
 const left = document.createElement('div');
