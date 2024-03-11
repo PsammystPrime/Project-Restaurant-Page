@@ -8,90 +8,45 @@ import drinksbg1 from "./drinksbg1.jpeg";
 const drinks = document.createElement('div');
 drinks.className = 'drinks';
 
-const choice = document.createElement('div');
-const choicePara = document.createElement('p');
-const pricePara = document.createElement('p');
-const choiceImg = document.createElement('img');
-pricePara.textContent = 'Ksh 220';
-choicePara.textContent = 'Capuccino Tea';
-choiceImg.alt = 'Capuccino Tea';
-choiceImg.id = 'drinks';
-choiceImg.src = capuccino;
-choice.appendChild(choicePara);
-choice.appendChild(pricePara);
-choice.appendChild(choiceImg);
+const dishes = []
 
-const choice2 = document.createElement('div');
-const choice2Para = document.createElement('p');
-const price2Para = document.createElement('p');
-const choice2Img = document.createElement('img');
-price2Para.textContent = 'Ksh 200';
-choice2Para.textContent = 'Milkshake';
-choice2Img.id = 'drinks';
-choice2Img.src = milkshake;
-choice2Img.alt = 'Milkshake';
-choice2.appendChild(choice2Para);
-choice2.appendChild(price2Para);
-choice2.appendChild(choice2Img);
+function Drink(name,price,img, info){
+    this.name = name,
+    this.price = price,
+    this.img = img,
+    this.info = info
+}
 
-const choice3 = document.createElement('div');
-const choice3Para = document.createElement('p');
-const price3Para = document.createElement('p');
-const choice3Img = document.createElement('img');
-price3Para.textContent = 'Ksh 250';
-choice3Para.textContent = 'Chocolate';
-choice3Img.alt = 'Chocolate';
-choice3Img.id = 'drinks';
-choice3Img.src = chocolate;
-choice3.appendChild(choice3Para);
-choice3.appendChild(price3Para);
-choice3.appendChild(choice3Img);
+function createItems(){
+    const drink1 = new Drink('capuccino',1000,capuccino,'hello capuccino')
+    const drink2 = new Drink('milkshake', 300, milkshake, '')
+    const drink3 = new Drink('chocolate', 350, chocolate)
+    const drink4 = new Drink('chocolateCoffee ', 450, chocolateCoffee)
+    const drink5 = new Drink('drinksbg1', 600, drinksbg1)
 
-const choice4 = document.createElement('div');
-const choice4Para = document.createElement('p');
-const price4Para = document.createElement('p');
-const choice4Img = document.createElement('img');
-price4Para.textContent = 'Ksh 300';
-choice4Para.textContent = 'Chocolate Coffee';
-choice4Img.alt = 'Chocolate Coffee';
-choice4Img.id = 'drinks';
-choice4Img.src = chocolateCoffee;
-choice4.appendChild(choice4Para);
-choice4.appendChild(price4Para);
-choice4.appendChild(choice4Img);
 
-const choice5 = document.createElement('div');
-const choice5Para = document.createElement('p');
-const price5Para = document.createElement('p');
-const choice5Img = document.createElement('img');
-price5Para.textContent = 'Ksh 150';
-choice5Para.textContent = 'Porridge';
-choice5Img.alt = 'Porridge';
-choice5Img.id = 'drinks';
-choice5Img.src = drinksbg1;
-choice5.appendChild(choice5Para);
-choice5.appendChild(price5Para);
-choice5.appendChild(choice5Img);
+    dishes.push(drink1, drink2, drink3, drink4, drink5)
 
-const choice6 = document.createElement('div');
-const choice6Para = document.createElement('p');
-const price6Para = document.createElement('p');
-const choice6Img = document.createElement('img');
-price6Para.textContent = 'Ksh 250';
-choice6Para.textContent = 'Espresso';
-choice6Img.alt = 'Espresso';
-choice6Img.id = 'drinks';
-choice6Img.src = Icon;
-choice6.appendChild(choice6Para);
-choice6.appendChild(price6Para);
-choice6.appendChild(choice6Img);
+    dishes.forEach((dish)=>{
+        const card = document.createElement('div');
+        const dishName = document.createElement('p');
+        const dishPrice = document.createElement('p');
+        const dishPicture = document.createElement('img');
 
-drinks.appendChild(choice);
-drinks.appendChild(choice2);
-drinks.appendChild(choice3);
-drinks.appendChild(choice4);
-drinks.appendChild(choice5);
-drinks.appendChild(choice6);
+        dishName.textContent = dish.name
+        dishPrice.textContent = dish.price
+        dishPicture.alt = dish.name;
+        dishPicture.id = 'meals';
+        dishPicture.src = dish.img
+        card.appendChild(dishName);
+        card.appendChild(dishPrice);
+        card.appendChild(dishPicture);
+        
+    drinks.appendChild(card);
+        // console.log(dish.name)
+    })
+}
+createItems()
 
 function drink() {
     body.textContent = ''
